@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global CSS */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+
+#w-btn{
+  margin-left: 40px;
+  background-color: #fff;
+  color: #1f4a40;
+  padding: 9px 30px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: none;
+  border: none;
+}
+#g-btn{
+  background-color:#51a995;
+  color: #fff;
+  padding: 9px 30px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: none;
+  border: none;
+}
+.s-btn {
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #51a995;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.p{
+  padding-left: 15px;
+}
+.sec-space {
+  padding: 4rem 0;
+}
+.extra-space {
+  padding-top: 8rem;
+}
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+/* Global css end hear */
+
+/* Navber */
+header{
+  background-color: #1f4a40;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#navber{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+}
+#navber .logo{
+  width: 120px;
+}
+#menu {
+  /* display: block; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#menu li{
+  list-style-type: none;
+  /* padding: 10px; */
+}
+#menu li a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+#menu button{
+
+  padding: 5px 25px;
+  cursor: pointer;
+}
+#bar{
+  color: #fff;
+  display: none;
+}
+/* header section end here */
+
+/* hero section start here */
+.hero{
+  background-color: #1f4a40;
+}
+.hero-box{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
+}
+.h-left{
+  width: 45%;
+  color: #fff;
+}
+.h-left p{
+  padding: 1.5rem 0;
+}
+.search{
+  position: relative;
+}
+.search input{
+  width: 100%;
+  height: 3rem;
+  border-radius: 35px;
+  padding: 0 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+.search a {
+  position: absolute;
+  top: 6.5px;
+  right: 9px;
+}
+.search i{
+  font-size: 2.3rem;
+}
+.h-right{
+  width: 50%;
+}
+.h-right img{
+  width: 100%;
+}
+/* hero section end  here*/
+
+/* features section start here */
+
+.features .fe-boxs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.features .fe-boxs .fe-box{
+  max-width: 200px;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+}
+.features .fe-boxs img{
+  width: 50px;
+  margin-top: 3rem;
+}
+/* fetures section end hear */
+
+/* job section start here  */
+.job .job-id{
+  margin-top: 3rem;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  list-style-type: none;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.job .job-id li{
+  padding: 20px 40px;
+  cursor: pointer;
+  color: #000;
+}
+.job .job-id li.active{
+  background-color: #51a995;
+  color: #fff;
+}
+
+.job .job-list{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  border: 1px solid #ccc;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  color: #000;
+  padding: 2rem 2rem;
+}
+.job .job-list.delete{
+  display: none;
+}
+.job .job-list h3{
+  padding: 0;
+}
+.job .job-list:hover{
+  background-color: #ecf1ec;
+}
+.job .job-list img{
+  width: 40px;
+}
+/* job section end here */
+
+/* Brand  Section start here */
+.trust .t-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+.trust .t-box img{
+  margin: 1rem 1rem 1rem 0rem;
+}
+.trust .t-box img:hover{
+  cursor: pointer;
+}
+/* Brand  Section end here */
+/* Team section start here */
+.team-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding-top: 3rem; */
+}
+.team-container .f1-box{
+  border: 1px solid #c1e1d9;
+  width: 280px;
+  padding: 2rem 0;
+  border-radius: 20px;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f1-box img{
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.f1-box a{
+  text-decoration: none;
+}
+.skill{
+  padding-bottom: 2rem;
+}
+#key{
+  font-size: 1rem;
+  background-color: #edcfee;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+/* team section end here */
+
+/* footer section start here */
+footer{
+  background-color: #1f4a40;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top .logo{
+  width: 170px;
+  margin-bottom: 1rem;
+}
+.top i{
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.bottom{
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.bottom div{
+  display: flex;
+  flex-direction: column;
+}
+.bottom a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  line-height: 35px;
+  font-size: 1.1rem;
+}
+
+/* resposive Hear */
+
+/* small screen here */
+/* resposive Hear */
+/* learg screen */
+
+/* small screen here */
+@media (max-width: 650px) {
+  #navber{
+    padding-left: 15px;
+  }
+  #menu {
+    background-color: #1f4a40;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    flex-direction: column;
+    text-align: left;
+    /* display: block; */
+    /* display: none; */
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+    position: absolute;
+    top: 80px;
+    right:-100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 3px 0px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+#menu.active{
+  right: 0px;
+  opacity: 1;
+}
+#bar {
+  color: #fff;
+  font-size: 1.7rem;
+  display: block;
+  /* padding: 2PX; */
+  cursor: pointer;
+}
+/* .nav-menu{
+  display: flex;
+} */
+#menu button{
+  background-color:#fff;
+  color: #1f4a40;
+  margin-right: -40px;
+}
+#menu button:hover{
+  background-color: rgb(193, 210, 231);
+}
+#menu li {
+  padding: 0rem 0rem 1.5rem 0rem;
+  text-align: left;
+}
+#menu li a {
+  margin-right: 40px;
+  color: #fff;
+  text-align: left;
+}
+/* header section end here */
+/* hero section start here */
+.hero{
+  padding-left: 15px;
+}
+.hero-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  height: auto;
+}
+.h-left{
+  width: 95%;
+}
+.h-left h1{
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.h-right{
+  width: 95%;
+  padding-top: 30px;
+}
+.hero::after{
+  content: '';
+  clear: both;
+  display:table;
+}
+/* hero section end here */
+.features{
+  padding-left: 15px;
+}
+ .features .fe-boxs .fe-box{
+  width: 45%;
+}
+/* job section start here */
+.job{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.job .job-id {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.job .job-id li {
+  padding: 14px 7px;
+  text-wrap:nowrap;
+}
+.job .job-list {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-gap: 13px;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem 0rem;
+  line-height: 70%;
+  letter-spacing: 2px;
+}
+/* brend section start here */
+.trust{
+  padding-left: 15px;
+}
+/* team section start here */
+.team{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.team-container .f1-box {
+  border: 1px solid #c1e1d9;
+  width: 95%;
+  padding: 1rem 0;
+  border-radius: 20px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* footer start here */
+.footer{
+  padding-left: 15px;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.top .f-t-s-d{
+  padding-top: 2rem;
+}
+.bottom div{
+  width: 50%;
+  padding-bottom: 50px;
+}
+}
+
+@media (min-width:650px) and (max-width:1200px){
+  .obj-width{
+    width: 95%;
+  }
+}

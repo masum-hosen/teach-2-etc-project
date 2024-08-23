@@ -1,0 +1,168 @@
+/* resposive Hear */
+
+/* small screen here */
+@media (max-width: 650px) {
+    #navber{
+      padding-left: 15px;
+    }
+    #menu {
+      background-color: #1f4a40;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: last baseline;
+      flex-direction: column;
+      text-align: left;
+      /* display: block; */
+      /* display: none; */
+      width: 100%;
+      height: auto;
+      padding: 30px 0px;
+      position: absolute;
+      top: 80px;
+      right:-100%;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 3px 0px;
+      opacity: 0;
+      transition: all 0.5s ease;
+  }
+  #menu.active{
+    right: 0px;
+    opacity: 1;
+  }
+  #bar {
+    color: #fff;
+    font-size: 1.7rem;
+    display: block;
+    /* padding: 2PX; */
+    cursor: pointer;
+  }
+  /* .nav-menu{
+    display: flex;
+  } */
+  #menu button{
+    background-color:#fff;
+    color: #1f4a40;
+    margin-right: -40px;
+  }
+  #menu button:hover{
+    background-color: rgb(193, 210, 231);
+  }
+  #menu li {
+    padding: 0rem 0rem 1.5rem 0rem;
+    text-align: left;
+  }
+  #menu li a {
+    margin-right: 40px;
+    color: #fff;
+    text-align: left;
+  }
+  /* header section end here */
+  /* hero section start here */
+  .hero{
+    padding-left: 15px;
+  }
+  .hero-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    height: auto;
+  }
+  .h-left{
+    width: 95%;
+  }
+  .h-left h1{
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+  .h-right{
+    width: 95%;
+    padding-top: 30px;
+  }
+  .hero::after{
+    content: '';
+    clear: both;
+    display:table;
+  }
+  /* hero section end here */
+  .features{
+    padding-left: 15px;
+  }
+   .features .fe-boxs .fe-box{
+    width: 45%;
+  }
+  /* job section start here */
+  .job{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .job .job-id {
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  .job .job-id li {
+    padding: 14px 7px;
+    text-wrap:nowrap;
+  }
+  .job .job-list {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 13px;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 0rem;
+    line-height: 70%;
+    letter-spacing: 2px;
+  }
+  /* brend section start here */
+  .trust{
+    padding-left: 15px;
+  }
+  /* team section start here */
+  .team{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .team-container .f1-box {
+    border: 1px solid #c1e1d9;
+    width: 95%;
+    padding: 1rem 0;
+    border-radius: 20px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* footer start here */
+  .footer{
+    padding-left: 15px;
+  }
+  .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .top .f-t-s-d{
+    padding-top: 2rem;
+  }
+  .bottom div{
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  }
+  
+  /* learg screen */
+  
+  @media(max-width:1200px){
+    .obj-width{
+      width: 95%;
+    }
+  }
